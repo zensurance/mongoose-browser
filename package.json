@@ -1,6 +1,6 @@
 {
-  "name": "mongoose",
-  "description": "Mongoose MongoDB ODM",
+  "name": "mongoose-browser",
+  "description": "Mongoose MongoDB ODM Browser",
   "version": "5.2.8-pre",
   "author": "Guillermo Rauch <guillermo@learnboost.com>",
   "keywords": [
