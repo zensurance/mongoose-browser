@@ -10,12 +10,14 @@ Compiled browser version of mongoose.
 
 ## To compile a new version:
 
-* clone the repo and `npm i`
-*  build browser bundle (this will replace the main index.js with new version)
-    * `./node_modules/.bin/webpack-cli`
+* clone the repo and `npm install`
+* build browser bundle (this will replace /index.js)
+  * `npm run build`
 
 ## What we did to mongo fork:
-  * added deps: `webpack webpack-cli "babel-loader@^8.0.0-beta" @babel/core @babel/preset-env uglifyjs-webpack-plugin`
+  * added deps: `webpack "babel-loader@^8.0.0-beta" @babel/core @babel/preset-env uglifyjs-webpack-plugin`
   * added config: `webpack.config.js`
-  * replaced index.js with compiled version
-  
+  * moved all dependencies to `devDependencies`
+  * replaced `index.js` with compiled version
+  * added `.npmignore` so only `package.json` and `index.js` get published to npm
+  * added `npm build` script
