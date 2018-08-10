@@ -1,23 +1,5 @@
-lib-cov
-**.swp
-*.sw*
-*.orig
-.DS_Store
-node_modules/
-benchmarks/
-docs/
-test/
-Makefile
-CNAME
-index.html
-index.jade
-bin/
-karma.*.js
-format_deps.js
-tools/31*
-*.key
-data/
-dist/
+# for mongoose-browser, we only want to upload index.js 
+# (package.json is incuded always)
 
-*.txt
-*.png
+*
+!index.js
